@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,7 +10,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MY APP'),
+        //backgroundColor: Colors.deepOrange,
+        title: Text(
+          'MY APP',
+          style: TextStyle(
+            fontSize: 20,
+          ),
+        ),
         centerTitle: true,
         actions: [
           IconButton(
