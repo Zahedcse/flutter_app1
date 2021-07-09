@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app1/widgets/drawer.dart';
 
 class HomePage extends StatelessWidget {
   final int days = 30;
@@ -34,23 +35,7 @@ class HomePage extends StatelessWidget {
           child: Text("This is $days of tutorial of $name"),
         ),
       ),
-      drawer: Drawer(
-          child: Column(
-        children: [
-          ElevatedButton(
-            onPressed: () {},
-            child: Text('button 1'),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.red)),
-          ),
-          ElevatedButton(
-            onPressed: () {},
-            child: Text('button 2'),
-            style: ButtonStyle(
-                backgroundColor: MaterialStateProperty.all(Colors.red)),
-          ),
-        ],
-      )),
+      drawer: MyDrawer(),
     );
   }
 }
