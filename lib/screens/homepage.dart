@@ -35,13 +35,22 @@ class HomePage extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        child: ElevatedButton(
-          onPressed: () {},
-          child: Text('button 1'),
-          style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(Colors.red)),
-        ),
-      ),
+          child: Column(
+        children: [
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('button 1'),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red)),
+          ),
+          ElevatedButton(
+            onPressed: () {},
+            child: Text('button 2'),
+            style: ButtonStyle(
+                backgroundColor: MaterialStateProperty.all(Colors.red)),
+          ),
+        ],
+      )),
     );
   }
 }
