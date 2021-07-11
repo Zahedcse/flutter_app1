@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app1/widgets/drawer.dart';
+import 'package:flutter/cupertino.dart';
 
 class HomePage extends StatelessWidget {
   final int days = 30;
@@ -11,7 +12,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         //backgroundColor: Colors.deepOrange,
         title: Text(
-          'MY APP',
+          'Catalog APP',
           style: TextStyle(
             fontSize: 20,
           ),
@@ -22,12 +23,12 @@ class HomePage extends StatelessWidget {
               onPressed: () {
                 print('search clicked');
               },
-              icon: Icon(Icons.search)),
+              icon: Icon(CupertinoIcons.search)),
           IconButton(
               onPressed: () {
                 print('profile clicked');
               },
-              icon: Icon(Icons.person)),
+              icon: Icon(CupertinoIcons.person)),
         ],
       ),
       body: Center(
