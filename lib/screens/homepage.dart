@@ -10,25 +10,26 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        //backgroundColor: Colors.deepOrange,
         title: Text(
           'Catalog APP',
-          style: TextStyle(
-            fontSize: 20,
-          ),
         ),
         centerTitle: true,
         actions: [
           IconButton(
-              onPressed: () {
-                print('search clicked');
-              },
-              icon: Icon(CupertinoIcons.search)),
+            onPressed: () {
+              print('search clicked');
+            },
+            icon: Icon(
+              CupertinoIcons.search,
+            ),
+          ),
           IconButton(
               onPressed: () {
                 print('profile clicked');
               },
-              icon: Icon(CupertinoIcons.person)),
+              icon: Icon(
+                CupertinoIcons.person,
+              )),
         ],
       ),
       body: Center(
