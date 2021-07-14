@@ -1,4 +1,6 @@
 {
-    "editor.codeLensFontFamily": "Firacode",
-    "editor.fontLigatures": true,
+  "editor.codeLensFontFamily": "Firacode",
+  "editor.fontLigatures": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true
 }
