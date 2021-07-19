@@ -11,12 +11,14 @@ class HomeDetail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+      ),
       backgroundColor: MyTheme.creamColor,
       bottomNavigationBar: Container(
         color: Colors.white,
         child: ButtonBar(
-         alignment: MainAxisAlignment.spaceBetween,
+          alignment: MainAxisAlignment.spaceBetween,
           buttonPadding: EdgeInsets.zero,
           children: [
             "\$${catalog.price}".text.bold.xl4.red800.make(),
@@ -25,8 +27,8 @@ class HomeDetail extends StatelessWidget {
               style: ButtonStyle(
                   shape: MaterialStateProperty.all(StadiumBorder()),
                   backgroundColor: MaterialStateProperty.all(Colors.cyan)),
-              child: "Buy".text.xl.bold.make(),
-            ).wh(100, 50),
+              child: "Add To Cart".text.lg.make(),
+            ).wh(130, 50),
           ],
         ).p24(),
       ),
@@ -40,7 +42,7 @@ class HomeDetail extends StatelessWidget {
             ).h32(context),
             Expanded(
               child: VxArc(
-                height: 30.0,
+                height: 20.0,
                 arcType: VxArcType.CONVEY,
                 edge: VxEdge.TOP,
                 child: Container(
@@ -54,6 +56,9 @@ class HomeDetail extends StatelessWidget {
                           .make(),
                       catalog.desc.text.make(),
                       10.heightBox,
+                      "Aliquyam ipsum et labore sadipscing vero tempor aliquyam sit voluptua aliquyam. Gubergren lorem sea at et duo dolor sanctus, eirmod sit consetetur sanctus nonumy et accusam sit sed duo, no magna erat"
+                          .text
+                          .make()
                     ],
                   ).py64(),
                 ),
